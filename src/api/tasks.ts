@@ -1,6 +1,9 @@
 import { Task, ColumnType } from '../types';
 
-const API_URL = 'http://localhost:4000';
+const API_URL = import.meta.env.VITE_API_URL || 
+  (typeof window !== 'undefined' && window.location.hostname === 'localhost' 
+    ? 'http://localhost:4000' 
+    : ''); // Empty for relative paths on Vercel
 
 export interface FetchTasksParams {
   column: ColumnType;
