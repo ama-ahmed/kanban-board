@@ -1,0 +1,207 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Design homepage",
+      "description": "Create a modern, responsive homepage design with hero section and navigation",
+      "column": "backlog",
+      "order": 3
+    },
+    {
+      "id": "2",
+      "title": "Set up CI/CD pipeline",
+      "description": "Configure GitHub Actions for automated testing and deployment",
+      "column": "backlog",
+      "order": 2
+    },
+    {
+      "id": "3",
+      "title": "User authentication",
+      "description": "Implement JWT-based authentication with login and signup pages",
+      "column": "backlog",
+      "order": 4
+    },
+    {
+      "id": "4",
+      "title": "Database schema design",
+      "description": "Design PostgreSQL schema for users, tasks, and projects",
+      "column": "backlog",
+      "order": 3
+    },
+    {
+      "id": "5",
+      "title": "API documentation",
+      "description": "Write comprehensive API docs using Swagger/OpenAPI",
+      "column": "backlog",
+      "order": 4
+    },
+    {
+      "id": "6",
+      "title": "Unit tests for utils",
+      "description": "Write unit tests for helper functions and utilities",
+      "column": "backlog",
+      "order": 6
+    },
+    {
+      "id": "7",
+      "title": "Dark mode support",
+      "description": "Add dark/light theme toggle with CSS variables",
+      "column": "backlog",
+      "order": 7
+    },
+    {
+      "id": "8",
+      "title": "Mobile responsiveness",
+      "description": "Ensure all pages work on mobile devices",
+      "column": "backlog",
+      "order": 8
+    },
+    {
+      "id": "9",
+      "title": "Email notifications",
+      "description": "Send email alerts for task assignments and due dates",
+      "column": "backlog",
+      "order": 9
+    },
+    {
+      "id": "10",
+      "title": "Export to PDF",
+      "description": "Allow users to export task reports as PDF files",
+      "column": "backlog",
+      "order": 10
+    },
+    {
+      "id": "11",
+      "title": "Redux integration",
+      "description": "Set up Redux store for global state management",
+      "column": "backlog",
+      "order": 1
+    },
+    {
+      "id": "12",
+      "title": "Dashboard analytics",
+      "description": "Create charts showing task completion statistics",
+      "column": "backlog",
+      "order": -1
+    },
+    {
+      "id": "13",
+      "title": "File uploads",
+      "description": "Add support for image and document attachments",
+      "column": "in_progress",
+      "order": 1
+    },
+    {
+      "id": "14",
+      "title": "Team collaboration",
+      "description": "Add comments and mentions system for team communication",
+      "column": "in_progress",
+      "order": 0
+    },
+    {
+      "id": "15",
+      "title": "Real-time updates",
+      "description": "Implement WebSocket for live task updates",
+      "column": "in_progress",
+      "order": 2
+    },
+    {
+      "id": "16",
+      "title": "Calendar integration",
+      "description": "Sync tasks with Google Calendar API",
+      "column": "in_progress",
+      "order": 3
+    },
+    {
+      "id": "17",
+      "title": "Search functionality",
+      "description": "Implement full-text search across all tasks",
+      "column": "in_progress",
+      "order": 4
+    },
+    {
+      "id": "18",
+      "title": "Performance optimization",
+      "description": "Optimize bundle size and lazy load components",
+      "column": "in_progress",
+      "order": 7
+    },
+    {
+      "id": "19",
+      "title": "Code review guidelines",
+      "description": "Document coding standards and review process",
+      "column": "review",
+      "order": 0
+    },
+    {
+      "id": "20",
+      "title": "Security audit",
+      "description": "Review and fix potential security vulnerabilities",
+      "column": "review",
+      "order": 1
+    },
+    {
+      "id": "21",
+      "title": "Accessibility audit",
+      "description": "Ensure WCAG 2.1 AA compliance across the app",
+      "column": "review",
+      "order": 2
+    },
+    {
+      "id": "22",
+      "title": "Integration tests",
+      "description": "Add Cypress tests for critical user flows",
+      "column": "review",
+      "order": 3
+    },
+    {
+      "id": "23",
+      "title": "Localization",
+      "description": "Add i18n support for multiple languages",
+      "column": "review",
+      "order": 4
+    },
+    {
+      "id": "24",
+      "title": "Docker setup",
+      "description": "Create Dockerfile and docker-compose configuration",
+      "column": "done",
+      "order": 0
+    },
+    {
+      "id": "25",
+      "title": "Environment configuration",
+      "description": "Set up dev, staging, and production environments",
+      "column": "done",
+      "order": 1
+    },
+    {
+      "id": "26",
+      "title": "ESLint and Prettier",
+      "description": "Configure code formatting and linting rules",
+      "column": "done",
+      "order": 2
+    },
+    {
+      "id": "27",
+      "title": "Git workflow",
+      "description": "Set up branch protection and PR templates",
+      "column": "done",
+      "order": 3
+    },
+    {
+      "id": "28",
+      "title": "Component library",
+      "description": "Create reusable UI component documentation",
+      "column": "done",
+      "order": 4
+    },
+    {
+      "id": "1772060213445",
+      "title": "eeee",
+      "description": "eee",
+      "column": "backlog",
+      "order": 0
+    }
+  ]
+}
