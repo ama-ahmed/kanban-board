@@ -1,11 +1,10 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { readFileSync } from 'fs';
-import { join } from 'path';
+const { readFileSync } = require('fs');
+const { join } = require('path');
 
 const dbPath = join(process.cwd(), 'db.json');
 const db = JSON.parse(readFileSync(dbPath, 'utf8'));
 
-export default function handler(req: VercelRequest, res: VercelResponse) {
+export default function handler(req, res) {
   const { method, query } = req;
   
   try {
@@ -27,7 +26,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   }
 }
 
-function handleGet(query: any, res: VercelResponse) {
+function handleGet(query, res) {
   let tasks = [...db.tasks];
   
   // Filter by column
@@ -48,8 +47,8 @@ function handleGet(query: any, res: VercelResponse) {
   const sortBy = query._sort || 'order';
   const sortOrder = query._order || 'asc';
   tasks.sort((a, b) => {
-    const aVal = a[sortBy as keyof typeof a];
-    const bVal = b[sortBy as keyof typeof b];
+    const aVal = a[sortBy];
+    const bVal = b[sortBy];
     return sortOrder === 'desc' ? bVal - aVal : aVal - bVal;
   });
   
@@ -63,7 +62,7 @@ function handleGet(query: any, res: VercelResponse) {
   return res.status(200).json(paginatedTasks);
 }
 
-function handlePost(body: any, res: VercelResponse) {
+function handlePost(body, res) {
   const newTask = {
     id: Date.now().toString(),
     ...body
@@ -76,7 +75,7 @@ function handlePost(body: any, res: VercelResponse) {
   return res.status(201).json(newTask);
 }
 
-function handlePatch(id: string, body: any, res: VercelResponse) {
+function handlePatch(id, body, res) {
   const taskIndex = db.tasks.findIndex(task => task.id === id);
   
   if (taskIndex === -1) {
@@ -87,7 +86,7 @@ function handlePatch(id: string, body: any, res: VercelResponse) {
   return res.status(200).json(db.tasks[taskIndex]);
 }
 
-function handleDelete(id: string, res: VercelResponse) {
+function handleDelete(id, res) {
   const taskIndex = db.tasks.findIndex(task => task.id === id);
   
   if (taskIndex === -1) {
