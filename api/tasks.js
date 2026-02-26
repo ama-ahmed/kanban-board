@@ -4,7 +4,7 @@ const { join } = require('path');
 const dbPath = join(process.cwd(), 'db.json');
 const db = JSON.parse(readFileSync(dbPath, 'utf8'));
 
-export default function handler(req, res) {
+module.exports = function handler(req, res) {
   const { method, query } = req;
   
   try {
@@ -24,7 +24,7 @@ export default function handler(req, res) {
   } catch (error) {
     return res.status(500).json({ error: 'Internal Server Error' });
   }
-}
+};
 
 function handleGet(query, res) {
   let tasks = [...db.tasks];
